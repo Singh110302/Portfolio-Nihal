@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Gangwar - Flutter Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #1f2937; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .hero { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; 
+                padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; opacity: 0.95; margin-bottom: 2rem; }
+        
+        .section { padding: 80px 0; }
+        .section-title { font-size: 3rem; text-align: center; margin-bottom: 3rem; 
+                        background: linear-gradient(135deg, #6366f1, #8b5cf6); 
+                        -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .projects { background: #f8fafc; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+        .project-card { background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+                       transition: transform 0.3s; border: 1px solid rgba(99,102,241,0.1); }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+        .project-card h3 { font-size: 1.8rem; margin-bottom: 1rem; color: #1f2937; }
+        .project-desc { color: #64748b; margin-bottom: 2rem; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
+        .tech { background: rgba(99,102,241,0.1); color: #6366f1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+        
+        .github-btn { 
+            display: inline-flex; align-items: center; gap: 0.75rem; 
+            background: #333; color: white; padding: 1rem 2rem; border-radius: 12px; 
+            text-decoration: none; font-weight: 600; transition: all 0.3s; 
+            width: 100%; justify-content: center;
+        }
+        .github-btn:hover { background: #24292e; transform: translateY(-2px); }
+        
+        .contact { background: #1f2937; color: white; text-align: center; }
+        .maq-btn { 
+            background: #10b981; color: white; padding: 1.25rem 3rem; border-radius: 12px; 
+            text-decoration: none; font-size: 1.2rem; font-weight: 600; display: inline-block; 
+            margin-top: 2rem; 
+        }
+        .maq-btn:hover { background: #059669; }
+        
+        @media (max-width: 768px) { 
+            .project-grid { grid-template-columns: 1fr; } 
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1><i class="fab fa-flutter"></i> Nihal Gangwar</h1>
+            <p>Full-Stack Flutter Developer | E-commerce & Delivery Apps</p>
+            <p><strong>Greater Noida, UP</strong> | Open for Full-time & Freelance</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects">
+        <div class="container">
+            <h2 class="section-title">Production Projects</h2>
+            <div class="project-grid">
+                <!-- ProntoW E-commerce -->
+                <div class="project-card">
+                    <i class="fas fa-shopping-cart project-icon" style="color: #6366f1;"></i>
+                    <h3>ProntoW E-commerce</h3>
+                    <p class="project-desc">Complete e-commerce platform with payments, dashboard & real-time orders</p>
+                    <div class="tech-stack">
+                        <span class="tech">Flutter • Supabase</span>
+                        <span class="tech">Razorpay</span>
+                        <span class="tech">BLoC</span>
+                    </div>
+                    <a href="https://github.com/NihalDev/prontow" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View ProntoW on GitHub
+                    </a>
+                </div>
+
+                <!-- T-Shirt Platform -->
+                <div class="project-card">
+                    <i class="fas fa-tshirt project-icon" style="color: #10b981;"></i>
+                    <h3>T-Shirt Platform</h3>
+                    <p class="project-desc">Merchant + Customer apps with MongoDB backend & complete APIs</p>
+                    <div class="tech-stack">
+                        <span class="tech">Flutter • GetX</span>
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">Node.js</span>
+                    </div>
+                    <a href="https://github.com/NihalDev/tshirt-ecommerce" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View T-Shirt App on GitHub
+                    </a>
+                </div>
+
+                <!-- Delivery Tracker -->
+                <div class="project-card">
+                    <i class="fas fa-map-marker-alt project-icon" style="color: #f59e0b;"></i>
+                    <h3>Delivery Tracker</h3>
+                    <p class="project-desc">Live GPS tracking with Mapbox navigation & push notifications</p>
+                    <div class="tech-stack">
+                        <span class="tech">Flutter</span>
+                        <span class="tech">Mapbox SDK</span>
+                        <span class="tech">Socket.io</span>
+                    </div>
+                    <a href="https://github.com/NihalDev/delivery-tracker" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View Delivery App on GitHub
+                    </a>
+                </div>
+
+                <!-- PlanIt APIs -->
+                <div class="project-card">
+                    <i class="fas fa-server project-icon" style="color: #ef4444;"></i>
+                    <h3>PlanIt APIs</h3>
+                    <p class="project-desc">Production REST APIs with JWT auth & Postman collections</p>
+                    <div class="tech-stack">
+                        <span class="tech">Node.js</span>
+                        <span class="tech">Express</span>
+                        <span class="tech">MongoDB</span>
+                    </div>
+                    <a href="https://github.com/NihalDev/planit-backend" class="github-btn" target="_blank">
+                        <i class="fab fa-github"></i> View PlanIt APIs on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Get In Touch</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ready for MAQ Software & Flutter projects</p>
+            <a href="mailto:Jobs@MAQSoftware.com?subject=Flutter%20Developer%20-%20Nihal&body=Portfolio:%20https://nihaldev.github.io/portfolio%0A%0AResume%20attached.%0A%0ABest,%0ANihal" 
+               class="maq-btn">
+                <i class="fas fa-paper-plane"></i> Apply to MAQ Software
+            </a>
+        </div>
+    </section>
+</body>
+</html>
